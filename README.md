@@ -12,7 +12,7 @@ e.g. “red,green&car!convertible”= (red OR green ) car NOT convertible
     
         e.g. “red!ball,hat&toy!”= red NOT ball NOR hat NOR toy
         
-    Oxymorons are allowed but return no results 
+    Impossible queries are allowed but return no results 
     
         e.g. “red!red” returns no results
 
