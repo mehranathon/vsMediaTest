@@ -1,0 +1,146 @@
+.form-title{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    color: #1790fb;
+    animation:fadein .25s;
+}
+
+.form-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    background-color: white;
+    border-radius:.5rem;
+    padding: 1rem;
+    max-width: 42rem;
+    min-width: 20rem;
+    margin:auto;
+    animation:fadein .25s;
+    
+}
+
+.form-label{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding:.5rem;
+    color:#1790fb;
+    width:100%;
+}
+
+.inline-field{
+    flex:1;
+}
+
+.q-label{
+    width:50%;
+}
+
+.form-input{
+    
+    border:none;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    padding:.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    font-size:large;
+    outline:none !important;
+    transition:color .25s;
+    background-color: transparent;
+}
+
+.form-input:disabled{
+    background-color: transparent;
+}
+
+.username-input{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    color:#1790fb;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+    outline:none !important;
+}
+
+.q-input{
+    color:white;
+}
+
+.form-label::after{
+    content:'';
+    height:1px;
+    width:0;
+    background-color: #1790fb;
+    position:absolute;
+    bottom:2rem;
+    transition:width .25s, left .25s;
+    left:50%;
+
+
+}
+.form-label::before{
+    content:'';
+    height:1px;
+    width:100%;
+    background-color: #33333329;
+    position:absolute;
+    bottom:2rem;
+    z-index:1;
+}
+
+.q-label::before{
+    background-color: #ffffff29;
+}
+
+.form-label:focus-within:after{
+    content:'';
+    height:1px;
+    width:100%;
+    background-color: #1790fb;
+    position:absolute;
+    bottom:2rem;
+    z-index:2;
+    left:0;
+
+}
+
+.v-indicator{
+    position:absolute;
+    fill:#ff5e5b;
+    border-radius: 50%;;
+    top:0;
+    left:0;
+    width:1rem;
+    transform:translateY(1rem);
+    opacity:0;
+    transition:opacity .25s
+}
+.v-indicator *{
+    transition:opacity .25s
+}
+.invalid{
+    opacity:1;
+}
+
+.hide-caret{
+    caret-color: transparent;
+}
+
+.vs-btn:disabled{
+    opacity:.5;
+    cursor: default;
+}
+
+.notification{
+    color: #ff5e5b;
+    position: absolute;
+    bottom: 0;
+    font-size: large;
+    margin-bottom:4rem;
+    animation:fadeup .25s;
+}

@@ -1,0 +1,74 @@
+@keyframes squishdown{
+    from{
+        transform:scaleY(1);
+    }
+    to{
+        transform:scaleY(0);
+    }  
+}
+
+@keyframes squishup{
+    from{
+        transform:scaleY(0);
+    } 
+    to{
+        transform:scaleY(1);
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeout{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+@keyframes fadeup{
+    from{
+        opacity:0;
+        transform: translateY(4rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadedown{
+    from{
+        opacity:0;
+        transform: translateY(-4rem);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.fade-out{
+    animation: .25s fadeout forwards !important;
+}
+
+.fade-in{
+    animation: .5s fadein forwards !important;
+}
+
+.squished{
+    animation: .5s squishdown .5s forwards;
+}
+
+.unsquished{
+    animation: .5s squishup forwards;
+
+}
